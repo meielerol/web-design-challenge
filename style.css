@@ -1,23 +1,32 @@
 body{
     background:#D3D3D3;
+    font-family: sans-serif;
+    font-size:1em;
 }
 
-.header{
+.navbar{
     background:#FFFFFF;
+    width:100%;
+    padding:0;
 }
 
-.home-button{
+.home-button-box{
+    /* positioning */
+    margin-left: 7%;
+    padding:10px;
     min-height:50px;
-    padding:5px;
-    margin:5px;
-    font-weight:800;
-    color:#FFFFFF;
     background:#48D1CC;
+    border:0px;
 }
 
+a.button{
+    /* font */
+    font-size:32px;
+    font-weight:bold;
+    color:#FFFFFF;
+}
 
-
-img{
+/* img{
     width:300px;
     height:300px;
-}
+} */
