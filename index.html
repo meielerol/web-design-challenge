@@ -7,33 +7,59 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- These somehow relate to the dropdown menu working vs. not working -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <!-- Home bar button -->
         <button type="button" class="home-button-box">
-            <a href="https://meielerol.github.io/web-design-challenge/" class="button">Latitude</a>
+            <a href="https://meielerol.github.io/web-design-challenge/" class="home-button">Latitude</a>
         </button>
-        <!-- clickable dropdown menu -->
+        <!-- Navigation buttons -->
+        <div class="nav-button">
+            <ul>
+                <li>
+                    <!-- clickable dropdown menu -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle nav-item" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <a class="dropdown-item" type="button" href="max-temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" type="button" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" type="button" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" type="button" href="wind-speed.html">Wind Speed</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="comparison.html" class="nav-item">Comparison</a>
+                </li>
+                <li>
+                    <a href="data.html" class="nav-item">Data</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-<!--
-        <div class="container">
-
+    <div class='container'>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 page-text">
                 <h1>Summary: Lattitude vs. X</h1>
-
+                <hr>
                 <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig1.png?raw=true" 
                     alt="Lattitude vs. Max Temperature" 
-                    align="left" 
-                    style="margin: 0px 10px 0px 0px;">
+                    class="main-img">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             </div>
-            <div class="col-md-4">
+            <!-- <div class="col-md-4 page-visuals">
                 <h2>Visualizations</h2>
                 <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig1.png?raw=true" 
                     alt="vs. Max Temperature">
@@ -43,11 +69,10 @@
                     alt="vs. Cloudiness">
                 <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig4.png?raw=true" 
                     alt="vs. Wind Speed">
-            </div>
+            </div> -->
         </div>
-
     </div>
--->
+
 </body>
 
 </html>
