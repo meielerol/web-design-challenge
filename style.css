@@ -38,10 +38,13 @@ hr{
     z-index:10;
 }
 .nav-item{
+    padding:10px;
+    background:#FFFFFF;
     color:#778899;
     font-weight:bold;
 }
 .dropdown-item{
+    background:#FFFFFF;
     color:#778899;
 }
 
@@ -92,7 +95,14 @@ h2{
     margin: 20px;
 }
 
-/* table formats----------------------------------------- */
+/* TABLE formats----------------------------------------- */
 table{
     height:600px;
 }
+
+/* MEDIA formats----------------------------------------- */
+@media (max-width:768px){
+    .navbar{
+        background:#48D1CC;
+    }
+ }
