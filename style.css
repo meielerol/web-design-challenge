@@ -35,8 +35,7 @@ hr{
 .navbar-nav{
     position:absolute;
     right:2%;
-/* HELP! tried to fix z index to pull collapsed nav buttons to front */
-    z-index:0;
+    z-index:10;
 }
 .nav-item{
     color:#778899;
@@ -45,6 +44,7 @@ hr{
 .dropdown-item{
     color:#778899;
 }
+
 
 /* BODY TEXT INFO formats----------------------------------------- */
 .row{
@@ -92,4 +92,7 @@ h2{
     margin: 20px;
 }
 
-/* SMALL formats----------------------------------------- */
+/* table formats----------------------------------------- */
+table{
+    height:600px;
+}
