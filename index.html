@@ -15,61 +15,80 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <!-- Home bar button -->
-        <button type="button" class="home-button-box">
-            <a href="https://meielerol.github.io/web-design-challenge/" class="home-button">Latitude</a>
+    <!-- Grabbing this from the components/navbar site of bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://meielerol.github.io/web-design-challenge/">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Navigation buttons -->
-        <div class="nav-button">
-            <ul>
-                <li>
-                    <!-- clickable dropdown menu -->
-                    <div class="dropdown">
-                        <a class="dropdown-toggle nav-item" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                            <a class="dropdown-item" type="button" href="max-temperature.html">Max Temperature</a>
-                            <a class="dropdown-item" type="button" href="humidity.html">Humidity</a>
-                            <a class="dropdown-item" type="button" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" type="button" href="wind-speed.html">Wind Speed</a>
-                        </div>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="max-temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
                     </div>
                 </li>
-                <li>
-                    <a href="comparison.html" class="nav-item">Comparison</a>
+                <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
                 </li>
-                <li>
-                    <a href="data.html" class="nav-item">Data</a>
+                <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
                 </li>
             </ul>
         </div>
     </nav>
-
     <div class='container'>
         <div class="row">
-            <div class="col-md-8 page-text">
-                <h1>Summary: Lattitude vs. X</h1>
-                <hr>
-                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig1.png?raw=true" 
-                    alt="Lattitude vs. Max Temperature" 
-                    class="main-img">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <div class="col-lg-8">
+                <div class="page-text">
+                    <h1>Summary: Lattitude vs. X</h1>
+                    <hr>
+                    <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig1.png?raw=true" 
+                        alt="Lattitude vs. Max Temperature" 
+                        class="main-img">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
             </div>
-            <!-- <div class="col-md-4 page-visuals">
-                <h2>Visualizations</h2>
-                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig1.png?raw=true" 
-                    alt="vs. Max Temperature">
-                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig2.png?raw=true" 
-                    alt="vs. Humididty">
-                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig3.png?raw=true" 
-                    alt="vs. Cloudiness">
-                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig4.png?raw=true" 
-                    alt="vs. Wind Speed">
-            </div> -->
+            <div class="col-lg-4 page-visuals">
+                <div class="page-text">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="visual-container">
+                        <div class="image">
+                            <a href="max-temperature.html">
+                                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig1.png?raw=true" 
+                                alt="vs. Max Temperature"/>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <a href="humidity.html">
+                                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig2.png?raw=true" 
+                                    alt="vs. Humididty"/>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <a href="cloudiness.html">
+                                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig3.png?raw=true" 
+                                alt="vs. Cloudiness"/>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <a href="wind-speed.html">
+                                <img src="https://github.com/meielerol/web-design-challenge/blob/main/Resources/assets/images/Fig4.png?raw=true" 
+                                alt="vs. Wind Speed"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

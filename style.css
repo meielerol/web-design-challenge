@@ -3,6 +3,16 @@ body{
     font-family: sans-serif;
     font-size:1em;
 }
+.page-text{
+    background:#FFFFFF;
+    padding-top:30px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+hr{
+    color:#778899;
+}
 
 /* NAVBAR formats----------------------------------------- */
 .navbar{
@@ -10,67 +20,38 @@ body{
     width:100%;
     padding:0;
 }
-button{
-    border:0px;
-    background:none;
-}
-.home-button-box{
-    font-size:32px;
-    font-weight:bold;
-    /* positioning */
-    margin-left: 7%;
+.navbar-light .navbar-brand{
+    /* surrounding */
+    margin-left:7%;
     padding:10px;
     min-height:50px;
     background:#48D1CC;
-}
-a.home-button{
     /* font */
+    font-size:32px;
+    font-weight:bold;
     color:#FFFFFF;
+    text-decoration:none;
 }
-.nav-button{
-    position: absolute;
+.navbar-nav{
+    position:absolute;
     right:7%;
-    display:inline-block;
-}
-.nav-button li{
-    display:inline-block;
-    padding:10px;
 }
 .nav-item{
+    color:#778899;
     font-weight:bold;
-    color: #778899;
-    border:none;
-    background:none;
-}
-.dropdown{
-    color:#778899;
-}
-.dropdown-menu{
-    color:#778899;
-    border:none;
 }
 .dropdown-item{
     color:#778899;
 }
 
-/* BODY INFO formats----------------------------------------- */
+/* BODY TEXT INFO formats----------------------------------------- */
 .row{
     padding-top:50px;
-}
-.page-text{
-    background:#FFFFFF;
-    padding-top:40px;
-    padding-bottom:20px;
-    padding-left:20px;
-    padding-right:20px;
-}
-hr{
-    color:#778899;
 }
 h1{
     color:#48D1CC;
     font-weight:bold;
-    font-size:24px;
+    font-size:28px;
 }
 .main-img{
     width:50%;
@@ -83,8 +64,24 @@ p{
     margin-top:20px;
     margin-bottom:20px;
 }
-.page-visuals{
-    background:#FFFFFF;
+
+/* PAGE VISUALS formats----------------------------------------- */
+h2{
+    color:#48D1CC;
+    font-weight:bold;
+    font-size:24px;
+}
+/* curtosy of https://www.codegrepper.com/code-examples/html/how+to+sort+image+in+html+into+a+2x2+grid */
+.visual-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.visual-container .image {
+    width: 50%;
+}
+.visual-container img {
+    width: calc(100% - (20px * 2));
+    margin: 20px;
 }
 
 /* SMALL formats----------------------------------------- */
