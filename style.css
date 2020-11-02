@@ -35,6 +35,8 @@ hr{
 .navbar-nav{
     position:absolute;
     right:2%;
+/* HELP! tried to fix z index to pull collapsed nav buttons to front */
+    z-index:0;
 }
 .nav-item{
     color:#778899;
