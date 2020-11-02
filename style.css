@@ -85,6 +85,15 @@ h2{
     font-weight:bold;
     font-size:24px;
 }
+h3{
+    color:#48D1CC;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+}
+.image{
+    padding:20px;
+}
 /* curtosy of https://www.codegrepper.com/code-examples/html/how+to+sort+image+in+html+into+a+2x2+grid */
 .visual-container {
     display: flex;
@@ -95,7 +104,8 @@ h2{
 }
 .visual-container img {
     width: calc(100% - (20px * 2));
-    margin: 20px;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 /* TABLE formats----------------------------------------- */
