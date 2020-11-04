@@ -114,10 +114,11 @@ table{
 }
 
 /* MEDIA formats----------------------------------------- */
-@media (max-width:768px){
+@media only screen and (max-width:768px){
     .navbar, .nav-item{
         background:#48D1CC;
         color:#FFFFFF;
+        width:100%;
     }
     .navbar-light .navbar-nav .nav-link{
         background:#48D1CC;
@@ -126,6 +127,7 @@ table{
     .dropdown-menu{
         background:#48D1CC;
         border:none;
+        width:100%;
     }
     .dropdown-item{
         background:#48D1CC;
